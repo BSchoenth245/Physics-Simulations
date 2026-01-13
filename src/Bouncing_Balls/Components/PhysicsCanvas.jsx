@@ -87,7 +87,7 @@ export default function PhysicsCanvas() {
       width={800}
       height={600}
       border="1px solid black"
-      style={{ backgroundColor: "#5408f9ff", display: "block", margin: "0 auto" }}
+      style={{ backgroundColor: "#d1dad1ff", display: "block", margin: "0 auto" }}
       onClick={handleClick}
     />
   );

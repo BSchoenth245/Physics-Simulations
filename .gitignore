@@ -4,6 +4,11 @@ node_modules/
 # Production build
 build/
 
+# Cache files
+.eslintcache
+*.pack
+*.pack.old
+
 # Environment variables
 .env
 .env.local
