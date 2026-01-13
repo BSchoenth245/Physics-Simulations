@@ -1,5 +1,5 @@
 import { GRAVITY } from "./constants";
-import { handleWallCollisions } from "./collisions";
+import { handleWallCollisions } from "./collision";
 
 export function updatePhysics(ball, canvas) {
   ball.vy += GRAVITY;

@@ -6,7 +6,7 @@
  * No physics logic should ever live here.
  */
 
-import PhysicsCanvas from "./components/PhysicsCanvas";
+import PhysicsCanvas from "./Components/PhysicsCanvas";
 
 export default function App() {
   return (

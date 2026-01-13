@@ -13,10 +13,10 @@
  */
 
 import { useRef, useEffect } from "react";
-import { updatePhysics } from "../physics/updatePhysics";
-import { drawBall } from "../render/drawBall";
-import { Ball } from "../physics/Ball";
-import { BALL_PRESETS } from "../presets/ballPresets";
+import { updatePhysics } from "../Physics/updatePhysics";
+import { drawBall } from "../Render/drawBall";
+import { Ball } from "../Physics/Ball";
+import { BALL_PRESETS } from "../Presets/ballPresents";
 
 export default function PhysicsCanvas() {
   /**
