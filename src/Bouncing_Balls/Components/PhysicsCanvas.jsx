@@ -33,6 +33,20 @@ export default function PhysicsCanvas() {
   const ballsRef = useRef([]);
 
   /**
+   * Reference to the sprite image.
+   */
+  const spriteRef = useRef(null);
+
+  /**
+   * Load sprite image on mount.
+   */
+  useEffect(() => {
+    const img = new Image();
+    img.src = '/Ball_Sprite.png';
+    spriteRef.current = img;
+  }, []);
+
+  /**
    * Handles mouse clicks on the canvas.
    * Spawns a new Ball at the mouse position.
    */
@@ -52,6 +66,7 @@ export default function PhysicsCanvas() {
         ...BALL_PRESETS.rubber,
         vx: Math.random() * 4 - 2, // random horizontal impulse
         vy: -6, // upward impulse
+        image: spriteRef.current, // Add sprite to ball
       })
     );
   }

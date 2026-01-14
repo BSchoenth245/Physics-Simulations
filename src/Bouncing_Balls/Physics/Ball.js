@@ -9,6 +9,7 @@ export class Ball {
     color,
     vx = 0,
     vy = 0,
+    image = "./images/PikPng.com_alolan-marowak-png_4364605.png",
   }) {
     this.x = x;
     this.y = y;
@@ -20,5 +21,6 @@ export class Ball {
     this.restitution = restitution;
     this.friction = friction;
     this.color = color;
+    this.image = image;
   }
 }
